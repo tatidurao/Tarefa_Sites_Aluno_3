@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3 - Lógica de Programação com JavaScript</title>
+    <style>
+        :root {
+            --primary: #3bec73;
+            --secondary: #a29bfe;
+            --accent: #10bd6f;
+            --light: #f8f9fa;
+            --dark: #2d3436;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--dark);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--light);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.5rem;
+        }
+
+        .conceito-box {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid var(--accent);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 7px 14px rgba(0,0,0,0.1);
+        }
+        input, select {
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        .code-example {
+            background: #2d3436;
+            color: #dfe6e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+
+        .resultado {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            min-height: 50px;
+            border: 1px dashed var(--primary);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Tarefa 3: Lógica de Programação com JavaScript</h1>
+        
+        <div class="conceito-box">
+            <h2>🤔 O que é Lógica de Programação?</h2>
+            <p>É a forma como organizamos nosso pensamento para resolver problemas usando código. É como uma receita de bolo para o computador!</p>
+        </div>
+        
+          <div class="conceito-box">
+            <h3>🔤 Tarefa Mini Cadastro</h3>
+            <p>Colete informações sobre a pessoa e mostre na tela:</p>
+            
+           
+            <input type="text" id="nome-usuario" placeholder="Digite seu nome">
+            <!--caixa para idade-->
+            <!--caixa para Endereço-->
+            <!--caixa para Cidade-->
+            <!--caixa para profissao-->
+            <button onclick="BoasVindas()">Cadastrar</button>
+            <div class="resultado" id="mostrarinformacoes"></div>
+        </div>
+        </div>   
+     
+
+        <script>
+          function BoasVindas() {
+             let nome = document.getElementById('nome-usuario').value
+             //idade
+             //endereço
+             //cidade
+             //profissao
+
+             //complete os dados sobre, ${idade}, ${endereço}, ${cidade}, ${profissao}
+             let mensagem = `Olá ${nome}, seja bem-vindo!
+             No seu cadastro temos: `
+            
+
+             document.getElementById('mostrarinformacoes').innerHTML = mensagem;
+            } 
+        </script>
+</body>        
